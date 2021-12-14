@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Information</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="navigate">
+        <a href="index.php">Home</a>
+        <div class="drop">
+            <a class="drop-button" href="#">Products</a>
+            <div class="drop-content">
+                <a href="currency.php">Currency Exchange</a>
+                <a href="#">Service Two</a>
+            </div>
+        </div>
+        <div class="drop">
+            <a class="drop-button" href="contact.html">Contact Us</a>
+            <div class="drop-content">
+                <a href="#"><img src=images\france2.png class="country"> Contactez-nous</a>
+                <a href="#"><img src=images\germany2.png class="country"> Kontaktiere Uns</a>
+                <a href="#"><img src=images\japan2.png class="country"> お問い合わせ</a>
+            </div>
+        </div>
+        <a href="aboutme.html">About</a>
+    </div>
+    <div class="top">
+        <header>
+            <h1>Contact Us</h1>
+            <p>If you would like to book a lesson, or attend one of the workshops, please complete the form below.
+                I will contact you within 24 hours!
+            </p>
+        </header>
+    </div>
+    <div id="data">
+        <form id="booking" action="mailto:dyke0033@algonquinlive.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>
+                    Your Data
+                </legend>
+                <table id="info">
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" id="first" name="first" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" id="last" name="last" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td>Street Address:</td>
+                        <td><input type="text" id="address" name="address" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td><input type="text" id="city" name="city" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td>Province:</td>
+                        <td>
+                            <select name="province" id="province" required="required">
+                                <option value="" disabled selected>Select Province</option>
+                                <option value="alberta">Alberta</option>
+                                <option value="bc">British Columbia</option>
+                                <option value="manitoba">Manitoba</option>
+                                <option value="nb">New Brunswick</option>
+                                <option value="newfoundland">Newfoundland and Labrador</option>
+                                <option value="nt">Northwest Territories</option>
+                                <option value="ns">Nova Scotia</option>
+                                <option value="nunavut">Nunavut</option>
+                                <option value="ontario">Ontario</option>
+                                <option value="pei">Prince Edward Island</option>
+                                <option value="quebec">Quebec</option>
+                                <option value="sask">Saskatchewan</option>
+                                <option value="yukon">Yukon</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Postal Code:</td>
+                        <td><input type="text" id="postal" name="postal" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td>Email Address:</td>
+                        <td><input type="email" id="email" name="email" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                required="required"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Agreement</legend>
+                <input type="checkbox" id="agree" name="agree" required="required">
+                <label for="agree">Accept Agreement</label>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <input type="reset" value="Clear" class="button">
+                <input type="submit" value="Submit" class="button">
+            </fieldset>
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>
